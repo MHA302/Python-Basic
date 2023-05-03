@@ -1,5 +1,5 @@
 # from functions import get_todos, add_todos
-from modules import functions
+import functions
 import time
 
 now = time.strftime("%b %d, %Y %H:%M:%S")
@@ -36,6 +36,7 @@ while True:
         except ValueError:
             print("Wrong Command!")
             continue
+
     elif user_action.startswith('complete'):
         try:
             number = int(user_action[9:])
