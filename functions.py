@@ -1,4 +1,6 @@
-FILEPATH = "files/todos.txt"
+FILEPATH = "todos.txt"
+
+
 def get_todos(filepath=FILEPATH):
     """ Reading text file
     and return the list from  to_do items
@@ -19,4 +21,3 @@ def add_todos(todos_arg, filepath=FILEPATH):
 if __name__ == "__main__":
     print("Hello from the functions")
     print(get_todos())
-
